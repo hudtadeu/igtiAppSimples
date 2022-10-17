@@ -8,8 +8,8 @@ function start() {
 }
 
 function handleButtonClick() {
-  const now = new Date();
-  clickArray.push(now.toISOString());
+
+  clickArray.push(getNewTimesTamp());
 
   render();
 }
@@ -25,4 +25,6 @@ function render() {
   });
 
   ul.innerHTML = lis;
+
+  document.title = clickArray.length;
 }
