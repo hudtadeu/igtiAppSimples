@@ -24,6 +24,7 @@ export default class App extends Component {
 
   render() {
     const { clickArray } = this.state;
+    
     return (
       <div>
         <h1>
